@@ -31,7 +31,7 @@ const Star = () => {
         object={star.scene}
         material={star.animations}
         scale={1}
-        position={[0, -0.25, -1]}
+        position={[-0.2, -0.1, -1]}
         rotation={[0, rotationY, 0]}
       />
     </mesh>
