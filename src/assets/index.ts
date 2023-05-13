@@ -1,4 +1,7 @@
-import logo from "./logo.png";
+import logo from "./logo.svg";
+
+import menu from "./menu.svg";
+import close from "./close.svg";
 
 import typescript from "./typescript.png";
 import react from "./react.png";
@@ -11,7 +14,7 @@ import javascript from "./javascript.png";
 import nodejs from "./nodejs.png";
 import redux from "./redux.png";
 import tailwind from "./tailwind.png";
-import threejs from "./threejs.png";
+import threejs from "./threejs.svg";
 
 import musiclab from "./musiclab1.svg";
 import bookabed from "./bookabed.svg";
@@ -34,4 +37,6 @@ export {
     musiclab,
     bookabed,
     brain,
+    menu,
+    close,
 };
