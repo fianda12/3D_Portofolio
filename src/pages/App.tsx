@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 import { About, Hero, Contact, Project, Tech, Navbar } from "./page";
