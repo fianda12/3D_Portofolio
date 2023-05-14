@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
-import WorldCanvas from "../canvas/Start";
+
+import EarthCanvas from "../canvas/Start";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto`} id="home">
       <div
         className={`absolute inset-0  max-w-7xl mx-auto sm:px-16 px-6 flex flex-row items-center justify-center gap-5 z-10`}
       >
@@ -20,11 +22,14 @@ const Hero = () => {
         </div>
       </div>
 
-      <WorldCanvas />
+      <EarthCanvas />
 
       <div className="absolute bottom-8 w-full flex justify-center items-center">
-        <a href="#about">
-          <div className="w-[30px] h-[54px] rounded-3xl border-4 border-white flex justify-center items-start p-2">
+        <Link to="/about">
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            className="w-[30px] h-[54px] rounded-3xl border-4 border-white flex justify-center items-start p-2"
+          >
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -36,8 +41,8 @@ const Hero = () => {
               }}
               className="w-2 h-2 rounded-full bg-white mb-1"
             />
-          </div>
-        </a>
+          </motion.div>
+        </Link>
       </div>
     </section>
   );

@@ -1,35 +1,24 @@
-import { motion, MotionProps, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
-import { ReactElement } from "react";
 
-interface StarWrapperProps {
-  Component: React.FunctionComponent;
-  idName: string;
-  motionProps?: MotionProps;
-}
-
-const StarWrapper = ({
-  Component,
-  idName,
-  motionProps = {},
-}: StarWrapperProps): ReactElement => {
-  const motionVariants: Variants = staggerContainer(0.1);
-
-  return (
-    <motion.section
-      variants={motionVariants}
-      initial='hidden'
-      whileInView='show'
-      {...motionProps}
-      className='max-w-7xl mx-auto relative z-0'
-    >
-      <span className='hash-span' id={idName}>
-        &nbsp;
-      </span>
-
-      <Component />
-    </motion.section>
-  );
+const SectionWrapper = (Component: any, idName: any) => {
+  function HOC() {
+    return (
+      <motion.section
+        variants={staggerContainer(0.1, 0.1)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className={`sm:px-16 px-6 max-w-7xl mx-auto relative z-0`}
+      >
+        <span className="hash-span" id={idName}>
+          &nbsp;
+        </span>
+        <Component />
+      </motion.section>
+    );
+  }
+  return HOC;
 };
 
-export default StarWrapper;
+export default SectionWrapper;

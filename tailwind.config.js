@@ -4,9 +4,14 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  mode: "jit",
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: "450px",
+      },
+    },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 }
 

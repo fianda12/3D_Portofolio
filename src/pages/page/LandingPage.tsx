@@ -55,7 +55,7 @@ function LandingPage({ onStartClick }: LandingPageProps) {
             initial={{ opacity: 0, scale: 0.5, y: -100 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}
-            className="text-4xl font-bold text-primary mb-8 text-white"
+            className="text-4xl font-bold  mb-8 text-white"
           >
             FIKRI AMANDA
           </motion.h1>

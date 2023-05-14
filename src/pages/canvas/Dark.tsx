@@ -4,8 +4,8 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import { Loader } from "../page";
 
-const Earth = () => {
-  const earth = useGLTF("./a_windy_day/scene.gltf");
+const Dark = () => {
+  const dark = useGLTF("./dark_metter/scene.gltf");
   const [rotationY, setRotationY] = useState(0);
 
   useEffect(() => {
@@ -28,17 +28,17 @@ const Earth = () => {
       />
       <pointLight intensity={1} />
       <primitive
-        object={earth.scene}
-        material={earth.animations}
-        scale={1}
-        position={[-0.2, -0.1, -1]}
+        object={dark.scene}
+        material={dark.animations}
+        scale={[10, 5, 10]}
+        position={[0, 0, 0]}
         rotation={[0, rotationY, 0]}
       />
     </mesh>
   );
 };
 
-const EarthCanvas = () => {
+const DarkCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
@@ -53,7 +53,7 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Earth />
+        <Dark />
       </Suspense>
 
       <Preload all />
@@ -61,4 +61,4 @@ const EarthCanvas = () => {
   );
 };
 
-export default EarthCanvas;
+export default DarkCanvas;

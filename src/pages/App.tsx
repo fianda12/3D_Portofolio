@@ -16,7 +16,7 @@ const App = () => {
     <>
       {isLoading ? (
         <BrowserRouter>
-          <div className="relative z-0 bg-black">
+          <div className="z-0 bg-black">
             <div className="bg-cover bg-no-repeat bg-center">
               <Navbar />
               <Hero />
