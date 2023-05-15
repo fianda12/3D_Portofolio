@@ -26,7 +26,7 @@ const ServiceCard: FC<ServiceProps> = ({
     >
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="card xs:w-[250px] w-full xs:h-[300px] h-full bg-zinc-950"
+        className="card xs:w-[250px] w-full xs:h-[300px] h-full"
       >
         <div className="rounded-[20px] py-5 px-4 flex justify-center items-center flex-col">
           <figure className="mt-10">
@@ -52,12 +52,12 @@ const About = () => {
   return (
     <>
       <section id="about">
-        <div className="flex flex-col mt-20">
+        <div className="flex flex-col mt-[90px]">
           <motion.div
             variants={textVariant(0)}
             initial="hidden"
             animate="show"
-            className="container ml-20"
+            className="container"
           >
             <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
               Introduction
@@ -66,10 +66,10 @@ const About = () => {
               Overview.
             </h2>
           </motion.div>
-          <div className="p-10">
+          <div className="">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="mt-4 ml-10 text-zinc-400 text-[17px] max-w-3xl leading-[30px]"
+              className="mt-4 text-gray-300 text-[17px] max-w-3xl leading-[30px]"
             >
               I am a junior front-end engineer who has experience in software
               development using TypeScript and JavaScript. I am also skilled in
