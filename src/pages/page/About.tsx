@@ -6,7 +6,7 @@ import { service } from "../../service/service";
 import { SectionWrapper } from "../../hoc";
 import { fadeIn, textVariant } from "../../utils/motion";
 
-import DarkCanvas from "../canvas/Dark";
+import { DarkCanvas } from "../canvas";
 
 interface ServiceProps {
   index?: number;
@@ -26,7 +26,7 @@ const ServiceCard: FC<ServiceProps> = ({
     >
       <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className="card xs:w-[250px] w-full xs:h-[300px] h-full"
+        className="card xs:w-[250px] w-full xs:h-[300px] h-full bg-zinc-900"
       >
         <div className="rounded-[20px] py-5 px-4 flex justify-center items-center flex-col">
           <figure className="mt-10">

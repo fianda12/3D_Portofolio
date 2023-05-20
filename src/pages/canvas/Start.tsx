@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-import { Loader } from "../page";
+import Loader from "../../components/Loader";
 
 const Earth = () => {
   const earth = useGLTF("./a_windy_day/scene.gltf");
@@ -38,7 +38,7 @@ const Earth = () => {
   );
 };
 
-const EarthCanvas = () => {
+const StarCanvas = () => {
   return (
     <Canvas
       frameloop="demand"
@@ -61,4 +61,4 @@ const EarthCanvas = () => {
   );
 };
 
-export default EarthCanvas;
+export default StarCanvas;

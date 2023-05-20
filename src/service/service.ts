@@ -44,46 +44,57 @@ const service = [
 
 const technologies = [
     {
+        title: "HTML",
         name: "HTML 5",
         icon: html,
     },
     {
+        title: "CSS",
         name: "CSS",
         icon: css,
     },
     {
+        title: "JavaScript",
         name: "JavaScript",
         icon: javascript,
     },
     {
+        title: "TypeScript",
         name: "TypeScript",
         icon: typescript,
     },
     {
+        title: "React",
         name: "React",
         icon: react,
     },
     {
+        title: "Redux Toolkit",
         name: "Redux Toolkit",
         icon: redux,
     },
     {
+        title: "Node.js",
         name: "NodeJS",
         icon: nodejs,
     },
     {
+        title: "git",
         name: "git",
         icon: git,
     },
     {
+        title: "Figma",
         name: "Figma",
         icon: figma,
     },
     {
+        title: "Tailwind CSS",
         name: "Tailwind CSS",
         icon: tailwind,
     },
     {
+        title: "Three JS",
         name: "Three JS",
         icon: threejs,
     }

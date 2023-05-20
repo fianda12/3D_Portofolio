@@ -1,15 +1,13 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import video from "../../assets/video/videos.webm";
 
-interface LandingPageProps {
-  onStartClick: () => void;
-}
-
-function LandingPage({ onStartClick }: LandingPageProps) {
+function LandingPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isStarted, setIsStarted] = useState(false);
   const controls = useAnimation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (videoRef.current) {
@@ -23,7 +21,7 @@ function LandingPage({ onStartClick }: LandingPageProps) {
       scale: 50,
       transition: { duration: 0.5, ease: "easeInOut" },
     });
-    onStartClick();
+    navigate("/home");
   };
 
   return (

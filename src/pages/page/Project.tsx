@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import {FC} from "react";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 

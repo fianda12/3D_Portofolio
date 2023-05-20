@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
-import EarthCanvas from "../canvas/Start";
+import { StarCanvas } from "../canvas";
 
 const Hero = () => {
   return (
@@ -22,7 +22,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <EarthCanvas />
+      <StarCanvas />
 
       <div className="absolute bottom-8 w-full flex justify-center items-center">
         <Link to="/about">

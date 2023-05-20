@@ -2,7 +2,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
-import { Loader } from "../page";
+import Loader from "../../components/Loader";
 
 const Dark = () => {
   const dark = useGLTF("./dark_metter/scene.gltf");

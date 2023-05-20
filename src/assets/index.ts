@@ -14,7 +14,7 @@ import javascript from "./javascript.png";
 import nodejs from "./nodejs.png";
 import redux from "./redux.png";
 import tailwind from "./tailwind.png";
-import threejs from "./threejs.svg";
+import threejs from "./three.png";
 
 import musiclab from "./musiclab1.svg";
 import bookabed from "./bookabed.svg";
