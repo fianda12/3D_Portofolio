@@ -50,8 +50,8 @@ const ProjectCard:FC <ProjectProps> = ({index, name, description, tags, image, s
       </div>
 
       <div className='mt-5'>
-        <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-        <p className='mt-2 text-gray-300 text-[14px]'>{description}</p>
+        <h3 className='text-white font-mono font-bold text-[24px]'>{name}</h3>
+        <p className='mt-2 text-gray-300 font-mono text-[14px]'>{description}</p>
       </div>
 
       <div className='mt-4 flex flex-wrap gap-2'>
@@ -84,7 +84,7 @@ const Project = () => {
     <div className='w-full flex'>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-3 text-gray-500 text-[17px] max-w-3xl leading-[30px]'
+        className='mt-3 text-gray-300 font-mono text-[17px] max-w-3xl leading-[30px]'
       >
        The following projects showcase my teamwork skills and experience, through these projects are real-life examples of my work. Each project is briefly described with
        links to code repositories and live demos within. It reflects my ability to solve complex problems, work with different technologies,

@@ -37,7 +37,7 @@ const ServiceCard: FC<ServiceProps> = ({
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-white text-[20px] font-bold text-center">
+            <h2 className="card-title text-white font-mono text-[20px] font-bold text-center">
               {" "}
               {title}
             </h2>
@@ -69,7 +69,7 @@ const About = () => {
           <div className="">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="mt-4 text-gray-300 text-[17px] max-w-3xl leading-[30px]"
+              className="mt-4 text-gray-300 font-mono text-[17px] max-w-3xl leading-[30px]"
             >
               I am a junior front-end engineer who has experience in software
               development using TypeScript and JavaScript. I am also skilled in
