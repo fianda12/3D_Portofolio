@@ -2,13 +2,18 @@
     "headers": [
       {
         "source": "/(.*)",
-        "destination": "/",
         "headers": [
           {
             "key": "Origin-Control",
             "value": "Off"
           }
         ]
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/"
       }
     ]
   }
