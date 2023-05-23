@@ -1,0 +1,15 @@
+{
+    "headers": [
+      {
+        "source": "/(.*)",
+        "destination": "/",
+        "headers": [
+          {
+            "key": "Origin-Control",
+            "value": "Off"
+          }
+        ]
+      }
+    ]
+  }
+  
