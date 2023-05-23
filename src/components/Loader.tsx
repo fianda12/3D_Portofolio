@@ -1,3 +1,7 @@
+import Lottie from "lottie-react";
+
+import LoadingBar from "../assets/loading-bar.json"
+
 import { Html, useProgress } from "@react-three/drei";
 
 const Loader = () => {
@@ -29,3 +33,8 @@ const Loader = () => {
 };
 
 export default Loader;
+
+
+export const LoadingAnimation = () => {
+  return <Lottie animationData={LoadingBar} loop={true} autoplay />;
+}
