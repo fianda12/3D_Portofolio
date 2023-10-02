@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 
-import { StarCanvas } from "../canvas";
-
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`} id="home">
@@ -21,8 +19,6 @@ const Hero = () => {
           </motion.h1>
         </div>
       </div>
-
-      <StarCanvas />
 
       <div className="absolute bottom-8 w-full flex justify-center items-center">
         <Link to="/about">

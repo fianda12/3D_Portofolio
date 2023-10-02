@@ -6,8 +6,6 @@ import { service } from "../../service/service";
 import { SectionWrapper } from "../../hoc";
 import { fadeIn, textVariant } from "../../utils/motion";
 
-import { DarkCanvas } from "../canvas";
-
 interface ServiceProps {
   index?: number;
   title?: string;
@@ -79,7 +77,6 @@ const About = () => {
             </motion.p>
 
             <div className="flex flex-wrap gap-10">
-              <DarkCanvas />
               <div className="mx-auto">
                 {service.map((service, index) => (
                   <ServiceCard key={service.title} index={index} {...service} />
