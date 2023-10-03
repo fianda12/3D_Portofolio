@@ -11,7 +11,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 250) {
+      if (scrollTop > 100) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -31,17 +31,16 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
-        <Link // Replace "a" with "Link" from react-scroll
-          to="top"
+        <Link
+          to="home"
           smooth={true}
-          duration={500} // Adjust the duration as needed
+          duration={500}
           className="flex items-center gap-2"
           onClick={() => {
             setActive("");
-            window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="w-12 h-12 object-contain" />
           <p
             className={`font-mono text-[18px] font-bold cursor-pointer flex ${
               scrolled ? "text-white" : "text-[#3F4C52]"

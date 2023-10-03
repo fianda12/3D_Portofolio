@@ -23,7 +23,7 @@ const TechCard: FC<TechProps> = ({ index = 0, title, name, icon}) => {
     variants={fadeIn("right", "spring", index * 0.5, 0.75)}
     className="card xs:w-[250px] w-full xs:h-[300px] h-full"
   >
-    <div className="rounded-[20px] py-5 px-4 flex justify-center items-center flex-col">
+    <div className="rounded-[20px] py-5 px-4 flex justify-center items-center sm:mr-24 flex-col">
       <figure className="mt-10">
         <img
           src={icon}
@@ -32,7 +32,7 @@ const TechCard: FC<TechProps> = ({ index = 0, title, name, icon}) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title font-mono text-white text-[20px] font-bold text-center">
+        <h2 className="card-title font-mono text-[#3F4C52] text-[20px] font-bold text-center">
           {" "}
           {title}
         </h2>

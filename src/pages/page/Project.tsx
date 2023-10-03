@@ -26,7 +26,7 @@ const ProjectCard:FC <ProjectProps> = ({index, name, description, tags, image, s
         scale: 1,
         speed: 450,
       }}
-      className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+      className='bg-zinc-900 p-5 rounded-2xl sm:w-[360px] w-full'
     >
       <div className='relative w-full h-[230px]'>
         <img
@@ -77,14 +77,14 @@ const Project = () => {
     <motion.div 
     className="mt-20"
     variants={textVariant(0)}>
-      <p className={`sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider `}>My work</p>
-      <h2 className={`text-white font-mono md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>Projects.</h2>
+      <p className={`sm:text-[18px] text-[14px] text-[#4FB6C7] uppercase tracking-wider `}>My work</p>
+      <h2 className={`text-[#3F4C52] font-mono md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]`}>Projects.</h2>
     </motion.div>
 
     <div className='w-full flex'>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-3 text-gray-300 font-mono text-[17px] max-w-3xl leading-[30px]'
+        className='mt-3 text-[#3F4C52] font-mono text-[17px] max-w-3xl leading-[30px]'
       >
        The following projects showcase my teamwork skills and experience, through these projects are real-life examples of my work. Each project is briefly described with
        links to code repositories and live demos within. It reflects my ability to solve complex problems, work with different technologies,
