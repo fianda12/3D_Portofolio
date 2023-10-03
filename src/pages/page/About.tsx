@@ -57,17 +57,17 @@ const About = () => {
             animate="show"
             className="container"
           >
-            <p className="sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider">
+            <p className="sm:text-[18px] text-[14px] text-[#4FB6C7] uppercase tracking-wider">
               Introduction
             </p>
-            <h2 className="text-white font-mono md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+            <h2 className="text-[#3F4C52] font-mono md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
               Overview.
             </h2>
           </motion.div>
           <div className="">
             <motion.p
               variants={fadeIn("", "", 0.1, 1)}
-              className="mt-4 text-gray-300 font-mono text-[17px] max-w-3xl leading-[30px]"
+              className="mt-2 text-[#3F4C52] font-mono text-[17px] max-w-3xl leading-[30px]"
             >
               I am a junior front-end engineer who has experience in software
               development using TypeScript and JavaScript. I am also skilled in
@@ -76,7 +76,7 @@ const About = () => {
               create efficient and scalable solutions.
             </motion.p>
 
-            <div className="flex flex-wrap gap-10">
+            <div className="flex flex-wrap gap-10 mt-7">
               <div className="mx-auto">
                 {service.map((service, index) => (
                   <ServiceCard key={service.title} index={index} {...service} />

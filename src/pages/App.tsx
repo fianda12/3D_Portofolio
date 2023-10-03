@@ -8,7 +8,7 @@ import Tech from "./page/Tech";
 const App = () => {
 
   return (
-        <div className="z-0 bg-black">
+        <div className="z-0 bg-[#F0E7E2]">
           <div className="bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />

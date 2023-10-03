@@ -13,7 +13,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5 }}
-            className={`font-black z-40 text-white font-mono lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}
+            className={`font-black z-40 text-[#3F4C52] font-mono lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}
           >
             WELCOME TO MY WORLD
           </motion.h1>
@@ -24,7 +24,7 @@ const Hero = () => {
         <Link to="/about">
           <motion.div
             whileHover={{ scale: 1.2 }}
-            className="w-[30px] h-[54px] rounded-3xl border-4 border-white flex justify-center items-start p-2"
+            className="w-[30px] h-[54px] rounded-3xl border-4 border-[#3F4C52] flex justify-center items-start p-2"
           >
             <motion.div
               animate={{
@@ -35,7 +35,7 @@ const Hero = () => {
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="w-2 h-2 rounded-full bg-white mb-1"
+              className="w-2 h-2 rounded-full bg-[#3F4C52] mb-1"
             />
           </motion.div>
         </Link>
