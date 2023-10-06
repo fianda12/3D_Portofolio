@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll"; // Import Link from react-scroll
+import { Link } from "react-scroll";
 import { NavLinks } from "../service/service";
 import { logo, menu, close } from "../assets";
 
@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav
       className={`
       w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-black" : "bg-[#F0E7E2]"
+        scrolled ? "bg-black" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -50,25 +50,25 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10 sm:mr-10">
+        <ul className="hidden sm:flex flex-row gap-10 sm:mr-10">
           {NavLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${
-                active === nav.title ? "text-[#3F4C52]" : "text-white"
-              } ${
-                scrolled ? "text-white" : "text-[#3F4C52]"
-              } hover:text-[#3F4C52] text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
+            <button
+            key={nav.id}
+            className={`${
+              active ? "text-white" : "text-[#3F4C52]"
+            } ${
+              scrolled ? "text-white" : "text-[#3F4C52]"
+            } hover:text-[#3F4C52] text-[18px] font-medium cursor-pointer`}
+            onClick={() => setActive(nav.title)}
+          >
+            <Link
+              to={nav.id}
+              smooth={true}
+              duration={500}
             >
-              <Link
-                to={nav.id}
-                smooth={true}
-                duration={500}
-              >
-                {nav.title}
-              </Link>
-            </li>
+              {nav.title}
+            </Link>
+          </button>
           ))}
         </ul>
 

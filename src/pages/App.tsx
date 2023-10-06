@@ -5,6 +5,7 @@ import Hero from "./page/Hero";
 import Project from "./page/Project";
 import Tech from "./page/Tech";
 
+
 const App = () => {
 
   return (
